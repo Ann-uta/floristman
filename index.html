@@ -21,30 +21,32 @@
         <header class="header">
             <div class="menu">
                 <ul id="head_menu">
-                    <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="about.html">О нас</a></li>
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="security_policy.html">Политика безопасности</a></li>
-                    <li><a href="terms_of_agreement.html">Условия соглашения</a></li>
+                    <li><a class="menu_item" href="contacts.html">Контакты</a></li>
+                    <li><a class="menu_item" href="about.html">О нас</a></li>
+                    <li><a class="menu_item" href="delivery.html">Доставка</a></li>
+                    <li><a class="menu_item" href="security_policy.html">Политика безопасности</a></li>
+                    <li><a class="menu_item" href="terms_of_agreement.html">Условия соглашения</a></li>
                 </ul>
             </div>
-            <div class="user">Личный кабинет <img src="assets/images/user.svg" alt="">
+            <div class="user">
+                <span>Личный кабинет</span><img src="assets/images/user.svg" alt="">
             </div>
-            <div class="logo"><img src="assets/images/Floristman.svg" alt="Floristman"></div>
+            <div class="logo">
+                <img src="assets/images/Floristman.svg" alt="Floristman">
+            </div>
             <div class="contacts_">
                 <div class="address"><span>Адрес магазина</span> <br />г.Москва
                 </div>
                 <div class="phone"><span>Главный офис</span><br /><img src="assets/images/telephone.svg" alt="">+7 968
                     765-70-07</div>
             </div>
-
             <div class="icons">
-                <a href="search"><img src="assets/images/search-interface-symbol.svg" alt=""></a>
-                <a href="cart"><img src="assets/images/shopping-bag.svg" alt=""></a>
-                <a href="favorites"><img src="assets/images/heart.svg" alt=""></a>
+                <a href="search.html"><img src="assets/images/search-interface-symbol.svg" alt=""></a>
+                <a href="cart.html"><img src="assets/images/shopping-bag.svg" alt=""></a>
+                <a href="favorites.html"><img src="assets/images/heart.svg" alt=""></a>
             </div>
         </header>
-        <nav class="nav" style="background-color: cadetblue;">
+        <nav class="nav">
             <div><a href="flowers.html">Цветы</a></div>
             <div><a href="gifts.html">Подарки</a></div>
             <div><a href="fruit_carts.html">Фруктовые корзины</a></div>
@@ -56,7 +58,13 @@
         </nav>
         <main class="main">
             <section class="main_pic">
-                <img src="assets/images/Fruktoviekorzini-min-1648x522_1.jpg" alt="Фруктовые корзины">
+                <picture>
+                    <source srcset="./assets/images/Fruktoviekorzini-1-min-1648x522.jpg" type="image/jpg"
+                        media="(max-width: 480px)">
+                    <source srcset="assets/images/Fruktoviekorzini-min-1648x522_1.jpg" type="image/jpg"
+                        media="(min-width: 481px)">
+                    <img src="assets/images/Fruktoviekorzini-min-1648x522_1.jpg" alt="Фруктовые корзины">
+                </picture>
             </section>
             <section class="pic_menu">
                 <div><img src="assets/images/Rectangle_30.jpg" alt=""><a href="flowers.html">Цветы</a></div>
@@ -90,14 +98,14 @@
                 <form action="#" method="post">
                     <ul>
                         <li><label for="name">
-                                <input type="text" id="name" name="user_name" placeholder="Ваше имя*" size="55%"
+                                <input type="text" id="name" name="user_name" placeholder="Ваше имя*" size="45rem"
                                     style="border: 1px solid #55B74C; border-radius: 8px;" /></label></li>
                         <li><label for="tel">
-                                <input type="tel" id="tel" name="tel" placeholder="Ваш телефон*" size="55%"
+                                <input type="tel" id="tel" name="tel" placeholder="Ваш телефон*" size="45%"
                                     style="border: 1px solid #55B74C; border-radius: 8px;" /></label>
                         </li>
                         <li><label for="idea">
-                                <textarea name="user_idea" id="idea" cols="55" rows="10" placeholder="Ваша идея*"
+                                <textarea name="user_idea" id="idea" cols="46" rows="10" placeholder="Ваша идея*"
                                     style="border: 1px solid #55B74C; border-radius: 8px;"></textarea></label>
                         </li>
                         <li><label for="pic">
@@ -152,60 +160,60 @@
                 </div>
             </section>
         </main>
-    </div>
-    <footer class="footer">
-        <div class="col_1">
-            <ul>
-                <li>Информация</li>
-                <li>О нас</li>
-                <li>Доставка</li>
-                <li>Политика безопасности</li>
-                <li>Условия соглашения</li>
-            </ul>
-        </div>
-        <div class="col_2">
-            <ul>
-                <li>Каталог</li>
-                <li>Цветы</li>
-                <li>Подарки</li>
-                <li>Фруктовые корзины</li>
-                <li>Воздушные шарики</li>
-                <li>Комнатные растения</li>
-                <li>Сладости</li>
-                <li>Услуги</li>
-                <li>Аксессуары</li>
-            </ul>
-        </div>
-        <div class="col_3">
-            <ul>
-                <li>Личный кабинет</li>
-                <li>Личный кабинет</li>
-                <li>Корзина</li>
-            </ul>
-        </div>
-        <div class="col_4">
-            <ul>
-                <li>Адрес</li>
-                <li>г.Москва</li>
-            </ul>
-        </div>
-        <div class="col_5">
-            <ul>
-                <li>Телефоны</li>
-                <li><img src="assets/images/telephone1.svg" alt=""> +7 968 765-70-07</li>
-                <li><img src="assets/images/telephone1.svg" alt=""> +7 925 965-70-07</li>
-            </ul><br /><br /><br />
-            <ul>
-                <li>По любым вопросам</li>
-                <li><a href="mailto:info@floristman.ru">info@floristman.ru</a></li>
-            </ul>
-        </div>
-        <div class="pay_1"><img src="assets/images/Group_127.png" alt=""></div>
-        <div class="net_icons"><img src="assets/images/Group_130.png" alt=""></div>
-        <div class="pay_2"><img src="assets/images/Group_128.png" alt=""></div>
-        <div class="copy">Floristman &copy; 2022</div>
-    </footer>
 
+        <footer class="footer">
+            <div class="col_1">
+                <ul>
+                    <li>Информация</li>
+                    <li>О нас</li>
+                    <li>Доставка</li>
+                    <li>Политика безопасности</li>
+                    <li>Условия соглашения</li>
+                </ul>
+            </div>
+            <div class="col_2">
+                <ul>
+                    <li>Каталог</li>
+                    <li>Цветы</li>
+                    <li>Подарки</li>
+                    <li>Фруктовые корзины</li>
+                    <li>Воздушные шарики</li>
+                    <li>Комнатные растения</li>
+                    <li>Сладости</li>
+                    <li>Услуги</li>
+                    <li>Аксессуары</li>
+                </ul>
+            </div>
+            <div class="col_3">
+                <ul>
+                    <li>Личный кабинет</li>
+                    <li>Личный кабинет</li>
+                    <li>Корзина</li>
+                </ul>
+            </div>
+            <div class="col_4">
+                <ul>
+                    <li>Адрес</li>
+                    <li>г.Москва</li>
+                </ul>
+            </div>
+            <div class="col_5">
+                <ul>
+                    <li>Телефоны</li>
+                    <li><img src="assets/images/telephone1.svg" alt=""> +7 968 765-70-07</li>
+                    <li><img src="assets/images/telephone1.svg" alt=""> +7 925 965-70-07</li>
+                </ul><br /><br /><br />
+                <ul>
+                    <li>По любым вопросам</li>
+                    <li><a href="mailto:info@floristman.ru">info@floristman.ru</a></li>
+                </ul>
+            </div>
+            <div class="pay_1"><img src="assets/images/Group_127.png" alt=""></div>
+            <div class="net_icons"><img src="assets/images/Group_130.png" alt=""></div>
+            <div class="pay_2"><img src="assets/images/Group_128.png" alt=""></div>
+            <div class="copy">Floristman &copy; 2022</div>
+        </footer>
+    </div>
 </body>
 
 </html>
