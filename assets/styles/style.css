@@ -97,13 +97,8 @@ img {
         padding-left: 50px;
         align-items: center;
     }
-}
 
-/*.pic_menu {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}*/
+}
 
 .logo {
     grid-column: 1/3;
@@ -162,10 +157,6 @@ img {
     padding-top: 15px;
 }
 
-/* скрываем чекбокс 
-#menu__toggle {
-    opacity: 0;
-}*/
 .nav {
     display: flex;
     gap: 1.8vw;
@@ -194,10 +185,11 @@ img {
 
 .pic_menu {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 1fr 1fr;
     gap: 1.8rem;
-    margin-top: 4.7rem;
+    margin-top: 1.7rem;
+    justify-content: center;
 }
 
 .pic_menu a {
@@ -245,7 +237,6 @@ img {
 }
 
 .line_through {
-    display: inline-block;
     padding-left: 0.625rem;
     font-style: normal;
     font-weight: 400;
@@ -268,7 +259,6 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 24px;
 }
 
 .promotion a:hover {
