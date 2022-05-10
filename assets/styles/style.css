@@ -16,7 +16,6 @@ img {
 
 .header {
     display: grid;
-    height: 10vh;
     grid-template-columns: repeat(6, 16.66%);
     grid-template-rows: 1fr 1fr;
 }
@@ -106,12 +105,13 @@ img {
 }
 
 .logo img {
-    width: 10.9375rem;
+    height: 3.1875rem;
 }
 
 .contacts_ {
     display: flex;
     width: 50vw;
+    align-items: center
 }
 
 .contacts_ span {
@@ -154,7 +154,7 @@ img {
     display: flex;
     gap: 20px;
     justify-content: end;
-    padding-top: 15px;
+    align-items: center;
 }
 
 .nav {
@@ -284,7 +284,8 @@ img {
 .form li {
     display: flex;
     margin: 0.8rem;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
     font-family: inherit;
     font-size: 1.25rem;
 }
@@ -294,7 +295,20 @@ img {
 }
 
 .form li:last-child {
+    display: flex;
+    flex-wrap: wrap;
     border: none;
+    gap: 5px;
+}
+
+#name,
+#tel,
+#idea {
+    width: 45vw;
+}
+
+#idea {
+    min-height: 10rem;
 }
 
 #submit {
@@ -337,8 +351,16 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 3.125rem 1fr 1fr;
-    margin-top: 75px;
     gap: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
+.reason p,
+.how p {
     text-align: center;
     font-style: normal;
     font-weight: 400;
